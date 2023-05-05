@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: background 0.5s;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    box-shadow: 3px 3px 3px 3px #b6b6b6;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 20px 10px;
+    transition: background 0.5s;
+}
+
+.img-github img{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0;
+}
+.texto{
+  text-align: center;
+  margin-bottom: 12px;
+}
+.texto p{
+   font-size: 16px;
+   color: #424242;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 15px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: black;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 25%;
+    right: 35%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon::before{
+    content: "\f186";
+    font-family: fontAwesome;
+    font-size: 30px;
+}
+
+/* Here starts dark mode*/
+
+.header.dark{
+    background: #202026;
+    
+}
+.header.header.dark{
+    box-shadow: #202026;
+}
+
+.header.dark .icon::before{
+content: "\f185";
+}
+
+.header.dark .texto p{
+    color: #fff;
+}
+
+.header.dark .container{
+    box-shadow: 3px 3px 3px 3px #161616;
+}
